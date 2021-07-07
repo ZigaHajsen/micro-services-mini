@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { CommentCreate } from '.';
 
 export const PostList = () => {
   const [posts, setPosts] = useState({});
@@ -24,6 +25,7 @@ export const PostList = () => {
         <div className='card-body'>
           <h3>{post.title}</h3>
         </div>
+        <CommentCreate postId={post.id} />
       </div>
     );
   });
