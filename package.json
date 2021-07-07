@@ -9,7 +9,8 @@
     "event-bus": "npm run start --prefix event-bus",
     "posts": "npm run start --prefix posts",
     "query": "npm run start --prefix query",
-    "start": "concurrently \"npm run client\" \"npm run comments\" \"npm run event-bus\" \"npm run posts\" \"npm run query\""
+    "moderation": "npm run start --prefix moderation",
+    "start": "concurrently \"npm run client\" \"npm run comments\" \"npm run event-bus\" \"npm run posts\" \"npm run query\" \"npm run moderation\""
   },
   "repository": {
     "type": "git",
