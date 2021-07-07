@@ -14,6 +14,8 @@ export const CommentList = ({ postId }) => {
 
   useEffect(() => {
     fetchComments();
+
+    // eslint-disable-next-line
   }, []);
 
   const renderedComments = comments.map((comment) => {
