@@ -1,0 +1,28 @@
+{
+  "name": "micro-services-mini",
+  "version": "1.0.0",
+  "description": "1st project for Microservices with Node JS and React by Stephen Grider",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "comments": "npm run start --prefix comments",
+    "event-bus": "npm run start --prefix event-bus",
+    "posts": "npm run start --prefix posts",
+    "query": "npm run start --prefix query",
+    "start": "concurrently \"npm run client\" \"npm run comments\" \"npm run event-bus\" \"npm run posts\" \"npm run query\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZigaHajsen/micro-services-mini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZigaHajsen/micro-services-mini/issues"
+  },
+  "homepage": "https://github.com/ZigaHajsen/micro-services-mini#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
